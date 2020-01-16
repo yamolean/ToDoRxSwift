@@ -15,6 +15,7 @@
 		187EDDEA23CF235D00208668 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187EDDE823CF235D00208668 /* LaunchScreen.storyboard */; };
 		187EDDF223D000BD00208668 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187EDDF123D000BD00208668 /* TaskListViewController.swift */; };
 		187EDDF423D005B600208668 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187EDDF323D005B600208668 /* AddTaskViewController.swift */; };
+		187EDDF823D0086200208668 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187EDDF723D0086200208668 /* Task.swift */; };
 		3CCC9F808D6163610FE01B41 /* Pods_TodoApp_RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF57041FFED6A82FB4005AB7 /* Pods_TodoApp_RxSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		187EDDEB23CF235D00208668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		187EDDF123D000BD00208668 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
 		187EDDF323D005B600208668 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		187EDDF723D0086200208668 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		43A143DCEE0665722E23EC87 /* Pods-TodoApp RxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoApp RxSwift.debug.xcconfig"; path = "Target Support Files/Pods-TodoApp RxSwift/Pods-TodoApp RxSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		AF57041FFED6A82FB4005AB7 /* Pods_TodoApp_RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodoApp_RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E27666EA5BC956C105E320 /* Pods-TodoApp RxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoApp RxSwift.release.xcconfig"; path = "Target Support Files/Pods-TodoApp RxSwift/Pods-TodoApp RxSwift.release.xcconfig"; sourceTree = "<group>"; };
@@ -69,15 +71,32 @@
 			children = (
 				187EDDDD23CF235C00208668 /* AppDelegate.swift */,
 				187EDDDF23CF235C00208668 /* SceneDelegate.swift */,
-				187EDDE123CF235C00208668 /* ViewController.swift */,
-				187EDDF123D000BD00208668 /* TaskListViewController.swift */,
+				187EDDF623D0085000208668 /* Model */,
+				187EDDF523D0083800208668 /* ViewController */,
 				187EDDE323CF235C00208668 /* Main.storyboard */,
-				187EDDF323D005B600208668 /* AddTaskViewController.swift */,
 				187EDDE623CF235D00208668 /* Assets.xcassets */,
 				187EDDE823CF235D00208668 /* LaunchScreen.storyboard */,
 				187EDDEB23CF235D00208668 /* Info.plist */,
 			);
 			path = "TodoApp RxSwift";
+			sourceTree = "<group>";
+		};
+		187EDDF523D0083800208668 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				187EDDE123CF235C00208668 /* ViewController.swift */,
+				187EDDF123D000BD00208668 /* TaskListViewController.swift */,
+				187EDDF323D005B600208668 /* AddTaskViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		187EDDF623D0085000208668 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				187EDDF723D0086200208668 /* Task.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		9388B999A21D56AC17BD89BB /* Pods */ = {
@@ -216,6 +235,7 @@
 				187EDDF223D000BD00208668 /* TaskListViewController.swift in Sources */,
 				187EDDDE23CF235C00208668 /* AppDelegate.swift in Sources */,
 				187EDDE023CF235C00208668 /* SceneDelegate.swift in Sources */,
+				187EDDF823D0086200208668 /* Task.swift in Sources */,
 				187EDDF423D005B600208668 /* AddTaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
