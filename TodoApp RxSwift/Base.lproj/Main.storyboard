@@ -109,8 +109,16 @@
                         <viewLayoutGuide key="safeArea" id="xdg-yt-tmG"/>
                     </view>
                     <navigationItem key="navigationItem" title="AddTask" id="Tbq-Y3-kyc">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="ogf-58-lZf"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="ogf-58-lZf">
+                            <connections>
+                                <action selector="save" destination="tmZ-qF-iY3" id="NTo-YA-3Ua"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="prioritySegmentedControl" destination="U9Z-6e-byS" id="OB0-xK-IOM"/>
+                        <outlet property="taskTitleTextField" destination="arT-Mf-Psw" id="SmZ-6P-NU8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ucN-wF-Gei" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
